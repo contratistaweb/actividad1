@@ -11,10 +11,10 @@
 
 <body>
     <header class="col-12">
-        <div class="title">
+        <div class="col-8">
             <h1>Viva Viajando</h1>
         </div>
-        <div class="login">
+        <div class="col-4">
             <a href="./login.html">
                 <h3>Iniciar Sesion</h3>
             </a>
@@ -22,36 +22,54 @@
     </header>
     <nav class="col-12">
         <ul>
-            <li><a href="./index.html">Inicio</a></li>
-            <li><a href="./paquetes.html">Paquetes</a></li>
-            <li><a href="./registro.html">Registro</a></li>
-            <li><a href="./contacto.html">Contacto</a></li>
-            <li><a href="./about.html">Sobre Nosotros</a></li>
+            <li class="col-2"><a href="./index.html">Inicio</a></li>
+            <li class="col-2"><a href="./paquetes.html">Paquetes</a></li>
+            <li class="col-2"><a href="./registro.html">Registro</a></li>
+            <li class="col-2"><a href="./contacto.html">Contacto</a></li>
+            <li class="col-2"><a href="./about.html">Sobre Nosotros</a></li>
         </ul>
     </nav>
-    <section class="col-7">
-        <article>
-            <h2>aqui el erticulo</h2>
-        </article>
-    </section>
-    <aside class="col-4">
-        <div class="buscador">
-            <form class="form-inline my-2 my-lg-0">
-                <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
-                <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
-            </form>
-        </div>
-        <div class="destacado">
-            aqui destacados
-        </div>
-        <div class="banner">
-            aqui banner
-        </div>
-    </aside>
-    <footer class="col-12">
-        <div class="col">contenido 1</div>
-        <div class="col">contenido 2</div>
-        <div class="col">contenido 3</div>
+    <div class="col-12 contenido">
+        <section class="col-8">
+            <article>
+                <div class="article-title">
+                    <h2>Nuestros paquetes de viaje</h2>
+                </div>
+                <div class="card contenido" style="max-width: 540px;">
+                    <div class="row no-gutters">
+                        <div class="col-4">
+                            <img src="./img/pack1.JPG" class="imgCardHorizontal" alt="pack1">
+                        </div>
+                        <div class="col-8">
+                            <div class="card-body">
+                                <h5 class="card-title">Paraiso Tropical</h5>
+                                <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                                <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </article>
+        </section>
+        <aside class="col-4">
+            <div class="buscador">
+                <form class="form-inline my-2 my-lg-0">
+                    <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+                    <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+                </form>
+            </div>
+            <div class="destacado">
+                aqui destacados
+            </div>
+            <div class="banner">
+                aqui banner
+            </div>
+        </aside>
+    </div>
+    <footer class="">
+        <div class="col-3 ">contenido 1</div>
+        <div class="col-3">contenido 2</div>
+        <div class="col-3">contenido 3</div>
     </footer>
 </body>
 
