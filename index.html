@@ -10,7 +10,7 @@
 </head>
 
 <body>
-    <header>
+    <header class="col-12">
         <div class="title">
             <h1>Viva Viajando</h1>
         </div>
@@ -20,7 +20,7 @@
             </a>
         </div>
     </header>
-    <nav>
+    <nav class="col-12">
         <ul>
             <li><a href="./index.html">Inicio</a></li>
             <li><a href="./paquetes.html">Paquetes</a></li>
@@ -29,23 +29,62 @@
             <li><a href="./about.html">Sobre Nosotros</a></li>
         </ul>
     </nav>
-    <section>
-        <article>
-            <h2>aqui el erticulo</h2>
-        </article>
-    </section>
-    <aside>
-        <div class="buscador">
-            aqui buscador
-        </div>
-        <div class="destacado">
-            aqui destacados
-        </div>
-        <div class="banner">
-            aqui banner
-        </div>
-    </aside>
-    <footer>
+    <div class="col-12">
+        <section class="col-7">
+            <article>
+                <div class="article-title">
+                    <h2>Viaja a tu destino preferido</h2>
+                </div>
+                <div class="galeria">
+                    <img class="item-galeria" src="./img/v1.jpg" alt="pack1">
+                </div>
+            </article>
+            <article class="recomendations">
+                <div class="card col-3">
+                    <img src="./img/user.png" class="card-img-top col-12" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">Card title</h5>
+                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of
+                            the card's content.</p>
+                        <a href="#" class="btn btn-primary">Go somewhere</a>
+                    </div>
+                </div>
+                <div class="card col-3">
+                    <img src="./img/user-1.png" class="card-img-top col-12" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">Card title</h5>
+                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of
+                            the card's content.</p>
+                        <a href="#" class="btn btn-primary">Go somewhere</a>
+                    </div>
+                </div>
+                <div class="card col-3"">
+                    <img src="./img/user.png" class="card-img-top col-12" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">Card title</h5>
+                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of
+                            the card's content.</p>
+                        <a href="#" class="btn btn-primary">Go somewhere</a>
+                    </div>
+                </div>
+            </article>
+        </section>
+        <aside class="col-4">
+            <div class="buscador">
+                <form class="form-inline my-2 my-lg-0">
+                    <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+                    <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+                </form>
+            </div>
+            <div class="destacado">
+                aqui destacados
+            </div>
+            <div class="banner">
+                aqui banner
+            </div>
+        </aside>
+    </div>
+    <footer class="col-12">
         <div class="col">contenido 1</div>
         <div class="col">contenido 2</div>
         <div class="col">contenido 3</div>
