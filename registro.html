@@ -1,18 +1,15 @@
 <!DOCTYPE html>
-<html lang="es">
+<html lang="en">
 
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, user-scalable=no">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <!--<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">-->
-    <link rel="stylesheet" href="css/style.css" type="text/css">
     <link rel="stylesheet" href="./css/style.css">
     <title>Registro de Viaje</title>
 </head>
 
 <body>
-
     <header class="col-12">
         <div class="col-12">
             <h1>Viva Viajando</h1>
@@ -28,18 +25,16 @@
             <li class="col-2"><a href="./about.html">Sobre Nosotros</a></li>
         </ul>
     </nav>
-    <div class="col-12 contenido">
-        <section class="col-8">
+    <div class="contenido">
+        <section class="col-9">
             <article>
                 <div class="contenedor2">
-                    <div class="titulo">
+                    <div class="article-title col-12">
                         <h2>Registro de Viaje</h2>
                     </div>
-                    <div class="part1">
 
-
-                        <form>
-
+                    <form class="form2">
+                        <div class="col-6 part1">
                             <div class="col-12">
                                 <h4>Datos Personales</h4>
                             </div>
@@ -53,14 +48,17 @@
                             </div>
                             <div class="form-group col-md-12 row">
                                 <label for="nacimiento" class="col-md-4">Fecha de Nacimiento: </label>
-                                <input type="date" class="form-control col-md-8" id="nacimiento" placeholder="DD/MM/AAAA">
+                                <input type="date" class="form-control col-md-8" id="nacimiento"
+                                    placeholder="DD/MM/AAAA">
                             </div>
                             <div class="form-group col-md-12 row">
                                 <label for="sexo" class="col-md-4">Sexo: </label>
                                 <div class="form-check row col-md-8" id="sexo">
-                                    <input class="form-check-input col-md-2" type="radio" name="sexo" id="sexoM" value="masculino" checked>
+                                    <input class="form-check-input col-md-2" type="radio" name="sexo" id="sexoM"
+                                        value="masculino" checked>
                                     <label class="form-check-label col-md-8" for="sexoM"> Masculino </label>
-                                    <input class="form-check-input col-md-2" type="radio" name="sexo" id="sexoF" value="femenino">
+                                    <input class="form-check-input col-md-2" type="radio" name="sexo" id="sexoF"
+                                        value="femenino">
                                     <label class="form-check-label col-md-2" for="sexoF"> Femenino </label>
                                 </div>
                             </div>
@@ -70,65 +68,69 @@
                             </div>
                             <div class="form-group col-md-12 row">
                                 <label for="celular" class="col-md-4">Celular: </label>
-                                <input type="number" class="form-control col-md-8" id="celular" placeholder="1231231234">
+                                <input type="number" class="form-control col-md-8" id="celular"
+                                    placeholder="1231231234">
                             </div>
                             <div class="form-group col-md-12 row">
                                 <label for="direccion" class="col-md-4">Direccion: </label>
-                                <input type="text" class="form-control col-md-8" id="direccion" placeholder="CL 12 #12-31 Apto 123">
-                            </div>
-
-                    </div>
-                    <div class="part2">
-                        <div class="col-12">
-                            <h4>Datos del Viaje</h4>
-                        </div>
-                        <div class="form-group col-md-12 row">
-                            <label for="fechaIni" class="col-md-2">Fecha Inicio: </label>
-                            <input type="date" class="form-control col-md-4" id="fechaIni" placeholder="DD/MM/AAAA">
-                            <label for="fechaRet" class="col-md-2">Fecha Retorno: </label>
-                            <input type="text" class="form-control col-md-4" id="fecheRet" placeholder="DD/MM/AAAA">
-                        </div>
-                        <div class="form-group col-md-12 row">
-                            <label for="lugarSalida" class="col-md-4">Lugar de Salida: </label>
-                            <select class="form-control col-md-8 ">
-							<option>Cali</option>
-							<option>Medellin</option>
-							<option>Bogota</option>
-							<option>Barraquilla</option>
-							<option>Cartagena</option>
-						</select>
-                            <label for="lugarDestino" class="col-md-4">Lugar de Destino: </label>
-                            <select class="form-control col-md-8">
-							<option>Cali</option>
-							<option>Medellin</option>
-							<option>Bogota</option>
-							<option>Barraquilla</option>
-							<option>Cartagena</option>
-						</select>
-                        </div>
-                        <div class="form-group col-md-12 row">
-                            <label for="hospedaje" class="col-md-4">Hospedaje: </label>
-                            <div class="form-check row col-md-8" id="hospedaje">
-                                <input class="form-check-input col-md-2" type="radio" name="hospedaje" id="hospSi" value="si" checked>
-                                <label class="form-check-label col-md-2" for="hospSi"> Si </label>
-                                <input class="form-check-input col-md-2" type="radio" name="hospedaje" id="hospNo" value="no">
-                                <label class="form-check-label col-md-2" for="hospNo"> No </label>
+                                <input type="text" class="form-control col-md-8" id="direccion"
+                                    placeholder="CL 12 #12-31 Apto 123">
                             </div>
                         </div>
-                        <div class="form-group col-md-12 row">
-                            <label for="tour" class="col-md-4">Tour: </label>
-                            <textarea class="form-control col-md-8" id="tour"></textarea>
+                        <div class="part2 col-6">
+                            <div class="col-12">
+                                <h4>Datos del Viaje</h4>
+                            </div>
+                            <div class="form-group col-md-12 row">
+                                <label for="fechaIni" class="col-md-2">Fecha Inicio: </label>
+                                <input type="date" class="form-control col-md-4" id="fechaIni" placeholder="DD/MM/AAAA">
+                                <label for="fechaRet" class="col-md-2">Fecha Retorno: </label>
+                                <input type="text" class="form-control col-md-4" id="fecheRet" placeholder="DD/MM/AAAA">
+                            </div>
+                            <div class="form-group col-md-12 row">
+                                <label for="lugarSalida" class="col-md-4">Lugar de Salida: </label>
+                                <select class="form-control col-md-8 ">
+                                    <option>Cali</option>
+                                    <option>Medellin</option>
+                                    <option>Bogota</option>
+                                    <option>Barraquilla</option>
+                                    <option>Cartagena</option>
+                                </select>
+                                <label for="lugarDestino" class="col-md-4">Lugar de Destino: </label>
+                                <select class="form-control col-md-8">
+                                    <option>Cali</option>
+                                    <option>Medellin</option>
+                                    <option>Bogota</option>
+                                    <option>Barraquilla</option>
+                                    <option>Cartagena</option>
+                                </select>
+                            </div>
+                            <div class="form-group col-md-12 row">
+                                <label for="hospedaje" class="col-md-4">Hospedaje: </label>
+                                <div class="form-check row col-md-8" id="hospedaje">
+                                    <input class="form-check-input col-md-2" type="radio" name="hospedaje" id="hospSi"
+                                        value="si" checked>
+                                    <label class="form-check-label col-md-2" for="hospSi"> Si </label>
+                                    <input class="form-check-input col-md-2" type="radio" name="hospedaje" id="hospNo"
+                                        value="no">
+                                    <label class="form-check-label col-md-2" for="hospNo"> No </label>
+                                </div>
+                            </div>
+                            <div class="form-group col-md-12 row">
+                                <label for="tour" class="col-md-4">Tour: </label>
+                                <textarea class="form-control col-md-8" id="tour"></textarea>
+                            </div>
+                            <div class="col-md-12">
+                                <input type="button" class="btn btn-primary float-right" value="Registrar Viaje"
+                                    onClick="alert('Gracias por contar con nosotros, le desamos un feliz viaje. ;-)')">
+                            </div>
                         </div>
-                        <div class="col-md-12">
-                            <input type="button" class="btn btn-primary float-right" value="Registrar Viaje" onClick="alert('Gracias por contar con nosotros, le desamos un feliz viaje. ;-)')">
-                        </div>
-                    </div>
                     </form>
 
                 </div>
             </article>
         </section>
-        <aside class="col-4">
+        <aside class="col-3">
             <div class="buscador">
                 <form class="form-inline my-2 my-lg-0">
                     <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
@@ -143,23 +145,31 @@
             </div>
         </aside>
     </div>
-    <footer class="">
-        <div class="col-3 ">contenido 1</div>
-        <div class="col-3">contenido 2</div>
-        <div class="col-3">contenido 3</div>
+    <footer class="col-12">
+        <div class="col-4 politicas">
+            <h5>Politicas y condiciones del servicio</h5><br>
+            <p>conozca acerca de nuestras condiciones y politicas de servicio a las que estan sujetos nuestros planes
+                vacacionales, paquetes de viajes y servicios de asesoria. </p>
+        </div>
+        <div class="col-4">
+            <h5>Informacion de la empresa</h5><br>
+            <p>PBX: (8) 765 43 21</p>
+            <p>Direccion: calle 15 16 - 17</p>
+            <p>ciudad: Medellin</p>
+            <p>Departamento: Antioquia</p>
+            <p>Pais: Colombia</p>
+        </div>
+        <div class="col-4">
+            <h5>Mapa del sitio</h5><br>
+            <ul class="mapaSitio">
+                <li class="col-2"><a href="./index.html">Inicio</a></li>
+                <li class="col-2"><a href="./paquetes.html">Paquetes</a></li>
+                <li class="col-2"><a href="./registro.html">Registro</a></li>
+                <li class="col-2"><a href="./contacto.html">Contacto</a></li>
+                <li class="col-2"><a href="./about.html">Sobre Nosotros</a></li>
+            </ul>
+        </div>
     </footer>
-
-
-
-
-
-
-
-
-
-    <!--<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
-<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>-->
 </body>
 
 </html>

@@ -52,7 +52,6 @@ nav ul {
 section {
     border: 2px white solid;
     background-color: whitesmoke;
-    align-content: center;
     padding: 1%;
 }
 
@@ -81,14 +80,10 @@ article {
 .imgCardHorizontal {
     float: left;
     width: 90%;
-    border-top-left-radius: 10%;
-    border-bottom-left-radius: 10%;
+    border-radius: 10%;
 }
 
-.mision, .vision, .historia {
-    padding: 1%;
-    text-align: justify;
-}
+
 /* *** fin section y su contenido *** */
 
 
@@ -97,7 +92,7 @@ article {
 aside {
     display: flex;
     flex-direction: column;
-    justify-content: flex-start;;
+    justify-content: flex-start;
     border: 2px white solid;
     background-color: whitesmoke;
     padding: 1%;
@@ -146,16 +141,11 @@ footer div{
 
 
 /*formularios del sitio*/
-
-.fheader {
-    background-color: blue;
-    width: 150px;
-    height: 40px;
-    text-align: center;
-    margin-top: -25px;
-    margin-bottom: 25px;
-    padding: 5px;
+.form2{
+    display: flex;
+    flex-direction: row;
 }
+
 
 h3 {
     width: 100%;
@@ -201,7 +191,7 @@ select {
 }
 
 .contenedor2 {
-    width: auto%;
+    width: auto;
     height: auto;
     display: flex;
     flex-wrap: wrap;
@@ -305,9 +295,12 @@ card-img-top {
     [class*="col-"] {
         width: 100%;
     }
-    .contenido, header, nav ul, footer{
+    .contenido, header, nav ul, footer, .form1, .form2{
         display: flex;
         flex-direction: column;
-        align-content: center
+        align-content: center;
+    }
+    .mision, .vision, .historia{
+        text-align: justify;
     }
 }
